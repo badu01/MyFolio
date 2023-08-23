@@ -1,0 +1,444 @@
+body {
+    margin: 20px;
+    padding: 0;
+    background: #F3F3F3;
+    align-content: end;
+    font-family: Work sans;
+}
+.navbar {
+    color: #272727;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+    position: fixed;
+    width: 98%;
+    padding-right:20px ;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #282727;
+    font-family: Work sans;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: Work sans;
+    color: #181818;
+    margin: 0 15px;
+    font-size: 16px;
+}
+.menu a:hover{
+    color: rgb(219, 73, 70);
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #2b2b2b;
+    margin: 3px 0;
+}
+
+
+.linefull {
+    display: flex;
+    width: 100%;
+    height: .5px;
+    background-color: #545454;
+   
+}
+
+
+
+
+.container {
+    align-content: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.group{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.profile img {
+    clip-path: circle();
+    width:350px;
+    height: inherit;
+    margin-right: 50px;
+}
+
+h1.hello {
+    max-width: 371px;
+    margin-bottom: -22px;
+    color: #1f1f1f;
+    font-family: Work Sans;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    margin-block-start: .13em;
+    margin-inline-start: 0px;
+}
+h2.title{
+    max-width: 325px;
+    color: #555;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-block-end: .13em;
+}
+
+p.intro {
+    max-width: 371px;
+    color: #555;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-block-start: .13em;
+}
+
+.butt{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+/*button {
+    font-family: Work sans;
+    padding: 0.6em 1.3em;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 0.2em;
+    box-shadow: 0.1em 0.1em;
+    margin-inline: 50px;
+  }
+  
+  button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
+*/
+
+
+button {
+    position: relative;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    padding: 1rem 3rem;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .25s ease;
+    margin-inline: 50px;
+    border-radius: 0.2em;
+  }
+  
+  button::before {
+    position: absolute;
+    content: '';
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    transform: translate(-5px, -5px);
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(84, 84, 84);
+    transition: .25s ease;
+  }
+  
+  button:hover {
+    transform: translate(-5px, -5px);
+  }
+  
+  button:hover::before {
+    transform: translate(5px, 5px);
+  }
+
+button.b1{
+    background-color: #EEA302;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+button.b2{
+    background-color: #FF3B25;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+button.b3{
+    background-color: #80D8DA;
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+button.b1:hover{
+    background-color: #eea30200;
+}
+button.b2:hover{
+    background-color: #ff3b2500;
+}
+button.b3:hover{
+    background-color: #80d9da00;
+}
+
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+}
+.foot h2{
+    font-family: Work sans;
+    font-size: 18px;
+    margin-block-end: .50em;
+}
+.foot p{
+    font-family: Work sans;
+    margin-block-start: .15em;
+}
+
+.foot a{
+    font-family: Work sans;
+    text-decoration: none;
+    color: #000;
+}
+
+.foot a:hover{
+ color: #f0a504;
+}
+.Phone{
+    
+    display: grid;
+}
+
+/* Style all font awesome icons 
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}*/
+
+/* Add a hover effect if you want 
+.fa:hover {
+  opacity: 0.7;
+}*/
+
+/* Set a specific color for each brand */
+
+/* Facebook 
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}*/
+
+/* Twitter 
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}*/
+
+
+.resumeContainer{
+    display: grid;
+    align-self: center;
+    align-items: center;
+    justify-items: start;
+    padding: 50px;
+}
+
+.resumeContainer h1{
+    font-size: 40px;
+    position: sticky;
+}
+
+.resumeContainer h2{
+    margin-block-start: 0cm;
+    display: block;
+    font-size: 27px;
+    max-width: 100px;
+}
+.resumeContainer h3{
+    margin-block-start: 0cm;
+    margin-block-end: .45em;
+    font-size: 20px;
+}
+
+.resumeContainer p{
+    max-width: 400px;
+    margin-block-start: .15em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 13px;
+    color: #2b2b2b;
+}
+
+.resumeContainer table{
+
+    align-items: start;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.resumeContainer table tr{
+   vertical-align: top;
+   height: 150px;
+   width: 900px;
+   animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.phone{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .foot{
+        display: block;
+    }
+    .navbar{
+        position: static;
+        width: 96%;
+    }
+
+    .group{
+        
+        margin: 30px;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .container{
+        display: block;
+        width: 100%;
+       height: max-content;
+    }
+
+    .group{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .profile img{
+        width: 200px;
+    }
+    .butt{
+        display: grid;
+        margin: 0px;
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+    .butt a{
+        width: 50%;
+        text-decoration: none;
+    }
+
+    button{
+        display: block;
+        margin-top: 30px;
+        width: 40vh;
+    }
+    h1.hello {
+        font-size: 60px;
+        padding-bottom: 10px;
+    }
+    .logo a {
+    font-size: 20px;
+    }
+    h2.title{
+        font-size: 18px;
+    }
+    
+    p.intro {
+        font-size: 14px;
+    }
+
+    .phone{
+        display: block;
+        animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+    .phone h1{
+        font-size: 35px;
+    }
+    .phone h2{
+        font-size: 30px;
+        max-width: 200px;
+    }
+    #nomargin{
+        margin-block-end: 10px;
+    }
+    .phone h3{
+        margin-block-start: 0px;
+        margin-block-end: 2px;
+    }
+    .phone p{
+        margin-block-end: 30px;
+        margin-block-start: 2px;
+        font-size: 13px;
+    }
+    .resumeContainer{
+        display: none;
+    }
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
