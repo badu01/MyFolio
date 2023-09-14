@@ -5,22 +5,32 @@ body {
     align-content: end;
     font-family: Work sans;
 }
-.navbar {
+/* .navbar {
     color: #272727;
+    background-color: #F3F3F3;
     display: flex;
     align-items: center;
     padding: 10px 10px;
     justify-content: space-between;
     position: fixed;
+    z-index:999;
     width: 98%;
     padding-right:20px ;
+} */
+header{
+    background-color: #F3F3F3;
+    display: flex;
+    height: 72px;
+    width: 98%;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
 }
-
 .logo a {
     text-decoration: none;
     color: #282727;
     font-family: Work sans;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -28,15 +38,18 @@ body {
     display: flex;
     justify-content: flex-end;
 }
-
-.menu a {
+nav ul{
+    display: flex;
+    list-style: none;
+}
+header nav ul li a {
     text-decoration: none;
     font-family: Work sans;
     color: #181818;
     margin: 0 15px;
     font-size: 16px;
 }
-.menu a:hover{
+.menu ul li a:hover{
     color: rgb(219, 73, 70);
 }
 
@@ -325,9 +338,9 @@ button.b3:hover{
 .phone{
     display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
-    .menu {
+    /* .menu {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -336,6 +349,32 @@ button.b3:hover{
         width: 100%;
         text-align: center;
         display: none;
+    } */
+
+    header nav{
+        position: absolute;
+        align-self: flex-end;
+        left:-100%;
+        top:70px;
+        width: 100%;
+        height: fit-content;
+        background: #F3F3F3;
+
+    }
+    .navb{
+        display: block;
+    }
+    header input{
+        display: block;
+    }
+    header #nav_check:checked ~nav{
+        left: 0px;
+    }
+    header nav ul{
+        display: block;
+    }
+    header nav ul li:hover{
+        background-color: #EEA302;
     }
     .foot{
         display: block;
@@ -344,9 +383,11 @@ button.b3:hover{
         position: static;
         width: 96%;
     }
-
+    header{
+        position: static;
+    }
     .group{
-        
+        position: inherit;
         margin: 30px;
     }
 
@@ -357,7 +398,6 @@ button.b3:hover{
     .burger {
         display: flex;
     }
-
     .container{
         display: block;
         width: 100%;
@@ -442,3 +482,25 @@ button.b3:hover{
         opacity: 1;
      }
 }
+
+/* @media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: block;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+} */

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/CSS/main.css">
     <title>Badusha Pareed</title>
 </head>
-<nav class="navbar">
+<!-- <nav class="navbar" id="myTopnav">
     <div class="logo">
         <a href="#">Badusha Pareed</a>
     </div>
@@ -21,14 +21,43 @@
         <a href="resume.html">Resume</a>
         <a href="#">Portfolio</a>
         <a href="#">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
     </div>
-    <div class="burger">
+    <div class="burger" onclick="myFunction()">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
-</nav>
+</nav> -->
 <body>
+    <header>
+
+        <div class="logo">
+            <a href="index.html">Badusha Pareed</a>
+        </div>
+       <div class="navb">
+        <input type="checkbox" id="nav_check" hidden>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav></div>
+        <label for="have_check" class="burger" >
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </header>
     <div class="container">
         <div class="group">
         <div class="profile">
@@ -46,6 +75,7 @@
            <a href="resume.html"> <button class="b3">Contact</button></a>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 <footer>
     <div class="linefull"></div>
